@@ -1,0 +1,124 @@
+/*实现全屏页面*/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.ct_layout{
+    width: 100%;
+    height: 100%;
+}
+
+/*头部搜索块*/
+.ct_header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+    background: #eeeeee;
+    position: absolute;
+}
+.ct_header .ct_back{
+    width: 18px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    background: url("../img/back.png");
+    background-size: contain;
+    margin-left: 15px;
+    margin-top: 12.5px;
+}
+.ct_header .ct_menu{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/menu.png");
+    background-size: cover;
+    margin-right: 15px;
+    margin-top: 12.5px;
+}
+.ct_header .ct_search{
+    padding:0 60px;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+}
+.ct_header .ct_search>input{
+     width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    color: #4C566C;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*商品内容*/
+.ct_content{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+/*左边商品区*/
+.ct_cLeft{
+    width: 100px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.ct_content .ct_cLeft ul{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ct_content .ct_cLeft ul li{
+    width: 100%;
+    height: 50px;
+}
+.ct_content .ct_cLeft ul li a{
+    width: 100%;
+    height: 100%;
+    background:#cccccc;
+    display: block;
+color: #555142;
+    line-height: 50px;
+    text-align: center;
+    border-bottom:1px solid #b3bbbf;
+    border-right:1px solid #b3bbbf;
+}
+.ct_content .ct_cLeft ul li.active a{
+    color: #e92322;
+    background: #ffffff;
+}
+/*右边商品区*/
+.ct_cRight{
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.ct_content .ct_cRight .ct_rBanner{
+    width: 100%;
+    display: block;
+}
+.ct_content .ct_cRight .ct_rBanner>img{
+    width: 100%;
+    display: block;
+}
+.ct_content .ct_cRight h3{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #cceecc;
+}
+.ct_content .ct_cRight .ct_hotCategory{
+    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+.ct_content .ct_cRight .ct_hotCategory li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}

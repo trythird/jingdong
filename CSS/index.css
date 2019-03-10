@@ -1,0 +1,218 @@
+.jd_layout{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #666666;
+}
+/* 搜索框 */
+.search{
+    width: 100%;
+    height: 40px;
+    max-width: 640px;
+    /* 固定于顶部 */
+    position: fixed;
+    background: rgba(21,22,19,0);
+    z-index: 999;
+}
+.logo{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: block;
+    background: url("../img/jd_logo.png");
+    background-size: contain;
+}
+.login{
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding-right: 10px;
+}
+.searchBox{
+    width: 100%;
+    height: 100%;
+    padding-left:110px;
+    padding-right: 60px;
+    position: relative;
+}
+.searchBox input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 33px;
+    color: #666666;
+}
+.searchBox::before{
+    content: "";
+    position: absolute;
+    background:url("../img/fangdajing.png");
+    width: 20px;
+    height: 23px;
+    background-size:cover;
+    left: 120px;
+    top: 8px;
+}
+/* 轮播图 */
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 10%;
+}
+.bannerImg{
+width: 1000%;
+position: relative;
+left: -100%;
+}
+.bannerImg > li{
+    width: 10%;
+    float: left;
+}
+.bannerImg > li img{
+    width: 100%;
+    height: 35vh;
+    display: block;
+}
+.bannerIndicator{
+    width: 128px;
+    height: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%) ;
+}
+
+.bannerIndicator > li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border:1px solid #ffffff;
+    float: left;
+    margin-left: 10px;
+}
+.bannerIndicator > li:first-of-type{
+    margin-left: 0;
+}
+.bannerIndicator > li.active{
+    background-color: #ffffff;
+}
+/* 导航条 */
+.nav{
+    width: 100%;
+    padding:10px 0;
+    background-color: #ffffff;
+}
+.nav li{
+    width: 25%;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+}
+.nav li img{
+    width: 60px;
+    height: 60px;
+}
+.nav li p{
+    line-height: 25px;
+}
+/* 产品栏 */
+.product{
+    width: 100%;
+}
+.product .productBox{
+    width: 100%;
+    margin-top: 10px;
+    background: #ffffff;
+    /* 边框阴影 */
+    box-shadow:1px 1px 1px  #cccccc ;
+}
+.product .productBox > .PTip{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #666666;
+    line-height: 30px;
+    padding-left: 30px;
+    margin-bottom: 3px;
+}
+.product .productBox > .PTip > h3{
+    position: relative;
+}
+.product .productBox > .PTip > h3::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #e92322;
+left: -8px;
+    top: 9px;
+}
+/* 产品块图片超链接 */
+
+.a_50{
+    width: 50%;
+    display: block;
+}
+.a_50 img{
+    width: 100%;
+    display: block;
+}
+/* 设置一个样式标记： 秒杀块样式开始*/
+.sk{
+    border-bottom: none;
+}
+.sk .s_left .sk_icon{
+    width: 28px;
+    height: 20px;
+    background: url("../img/clock.png");
+    background-size: 28px,20px;
+    background-repeat: no-repeat;
+    padding-right: 5px;
+}
+.sk .s_left .sk_text{
+    color: #e92322;
+    padding-right: 8px;
+}
+.sk > .s_left .sk_time > span{
+    width: 13px;
+    height: 18px;
+    line-height: 18px;
+    background: black;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+}
+.sk > .s_left .sk_time > span:nth-last-of-type(3n) {
+    color:#000000;
+    background-color: transparent;
+    width: 8px;
+}
+.sk .s_right{
+    margin-right: 8px;
+}
+.sk .pContent{
+    padding: 20px;
+}
+.sk .pContent ul{
+    width: 100%;
+    padding-top: 10px;
+}
+.sk .pContent ul li{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.sk .pContent ul li img{
+    width: 60%;
+    display: inline-block;
+}
+
+

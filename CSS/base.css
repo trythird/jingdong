@@ -1,0 +1,71 @@
+/*公共样式*/
+/* 1.样式重置 */
+html,body,p,ul,li,img,div,input,form,a{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /* 去掉移动端特有的点击高亮效果 */
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    font-size: 13px;
+    font-family: "微软雅黑",sans-serif;
+}
+a,a:hover{
+    color: #666666;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    /* 1.清除文本框获取焦点时默认的边框阴影*/
+    outline: none;
+    /* 2.去除边框 */
+    border: none;
+    /* 3.添加边框 */
+    border: 1px solid #ccc;
+}
+/* 新样式 */
+.m_all10{
+    margin: 10px;
+}
+.m_right10{
+    margin-right: 10px;
+}
+.m_top10{
+    margin-top: 10px;
+}
+.m_left10{
+    margin-left: 10px;
+}
+.m_bottom10{
+    margin-bottom: 10px;
+}
+.clearfix::before,
+.clearfix::after{
+    display: block;
+    content: "";
+    height: 0;
+    line-height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.b_left{
+    border-left: 1px solid #666666;
+}
+.b_bottom{
+    border-bottom: 1px solid #666666;
+}
+.b_top{
+    border-top: 1px solid #666666;
+}
+.b_right{
+    border-bottom: 1px solid #666666;
+}
